@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernardo Rodrigues</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section id="HOME" class="todaPagina">
+        <article class="menuLateral">
+            <nav>
+                <ul id="menuItens" class="listaItens"> 
+                    
+                    <li class="classeDo1Botao">
+                            <span class="botaoExpandir" onclick="exibirMenu()"><i class="bi bi-list-stars"></i></span>
+                    </li>
+
+                    <li class="itens">
+                        <a href="#HOME">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="nomeItem">Home</span>
+                        </a>
+                    </li>
+                    <li class="itens">
+                        <a href="#ABOUTME">
+                            <span class="icon"><i class="bi bi-person-check"></i></span>
+                            <span class="nomeItem" id="aboutMe">About me</span>
+                        </a>
+                    </li>
+                    <li class="itens">
+                        <a href="#SKILLS">
+                            <span class="icon"><i class="bi bi-code-slash"></i></span>
+                            <span class="nomeItem">Skills</span>
+                        </a>
+                    </li>
+                    <li class="itens">
+                        <a href="#PROJECTS">
+                            <span class="icon"><i class="bi bi-device-hdd"></i></span>
+                            <span class="nomeItem">Projects</span>
+                        </a>
+                    </li>
+                    <li class="itens">
+                        <a href="#CONTACTS">
+                            <span class="icon"><i class="bi bi-inboxes"></i></span>
+                            <span class="nomeItem">Contact</span>
+                        </a>
+                    </li>
+                    <li class="itens">
+                        <a href="mailto:rodriguesfsbernardo@gmail.com" target="_blank">
+                            <span class="icon"><img class="imagensDaBarra" src="imagens/imagemEmailRedonda.png" alt="Email" height="28px" width="28px"></span>
+                            <span class="nomeItem">Email</span>
+                        </a>
+                    </li>
+                    <li class="itens">
+                        <a href="https://www.linkedin.com/in/bernardo-rodrigues-214446260/" target="_blank">
+                            <span class="icon"><img class="imagensDaBarra" src="imagens/imagemLinkedinRedonda.png" alt="Linkedin" height="28px" width="28px"></span>
+                            <span class="nomeItem">Linkedin</span>
+                        </a>
+                    </li>
+                    
+                    <li class="itens">
+                        <a href="https://api.whatsapp.com/send/?phone=5531987706385&text&type=phone_number&app_absent=0" target="_blank">
+                            <span class="icon"> <img class="imagensDaBarra" src="imagens/imagemWhatsApp.png" alt="WhatsApp" height="28px" width="28px"> </span>
+                            <span class="nomeItem">WhatsApp</span>
+                        </a>
+                    </li>
+                    <li class="itens">
+                        <a href="https://github.com/bernardofsrodrigues" target="_blank">
+                            <span class="icon"><img class="imagensDaBarra" src="imagens/imagemGitHub.png" alt="GitHub" height="28px" width="28px"></span>
+                            <span class="nomeItem">GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+
+
+        <article class="pagina1">
+            <h1 id="tituloPrincipal"><span class="verde">// Welcome to my<br>portfolio!</span></h1>
+                <p id="paragrafoPrincipal"><span class="azul">int</span> main <span class="vermelho">() { </span><br>
+                &nbsp; &nbsp; printf <span class="vermelho">(</span><span class="azul">"Here I will show you, some of my skills,<br>
+                &nbsp; &nbsp; &nbsp; my projects and who I am. Hope you like."</span><span class="vermelho">);</span><br>
+                &nbsp; return <span class="rosa">0</span><span class="vermelho">; <br>
+                &nbsp; }</span></p>
+        </article>
+
+    </section>
+
+    <main id="ABOUTME">
+        <h1><span class="verde">About me</span></h1>
+        <p>Nice to meet you, my name is <span class="azul">Bernardo Rodrigues</span>,<br> 
+            I'm nineteen years old and I'm studying <span class="vermelho">Software Engineering</span><br> 
+            at PUC Minas. I've always been interested in computers and<br> 
+            new technologies and for my professional life it couldn't be<br> 
+            anything else. I started my studies in programming and I do<br> 
+            some projects in my free time to improve my knowledge, improve<br> 
+            myself and gain experience.<br><br><br>
+        </p>
+    </main>
+
+    <main id="SKILLS">
+        <h1><span class="verde">Skills</span></h1>
+
+        <section class="skillsimg1">
+            <figure>
+                <img src="imagens/imagemHTML.png" class="imagemSkills"  alt="HTML">
+                <figcaption>HTML 5</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemCSS.png" class="imagemSkills" alt="CSS">
+                <figcaption>CSS 3</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemJavaScript.png" class="imagemSkills" alt="JAVASCRIPT">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemC.png" class="imagemSkills" alt="C">
+                <figcaption>C</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemSQL4.png" class="imagemSkills" id="imagemSQL" alt="SQL">
+                <figcaption>SQL</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemPython2.png" class="imagemSkills" alt="PYTHON">
+                <figcaption>Python</figcaption>
+            </figure>
+        </section>
+
+        <section class="skillsimg2">
+            <figure>
+                <img src="imagens/imagemLogicaDeProgramação.png" class="imagemSkills"  alt="Programming Logic">
+                <figcaption>Programming Logic</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemGit.png" class="imagemSkills" alt="GIT">
+                <figcaption>Git</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemGitHubSkills.png" class="imagemSkills" alt="Git Hub">
+                <figcaption>Git Hub</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemSQLGrandona.png" class="imagemSkills" alt="MySQL">
+                <figcaption>My SQL</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemSQLserver.png" class="imagemSkills" alt="SQLserver">
+                <figcaption>SQL Server</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/imagemOffice365Grande.png" class="imagemSkills" alt="Office 365">
+                <figcaption>Pacote Office 365</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <main id="PROJECTS">
+        <h1><span class="verde">Projects</span></h1>
+    </main>
+
+    <footer>
+        <article id="CONTACTS" class="CONTACTS">
+            <section>
+                <p class="frase"><i>"mais importante que a velocidade<br> 
+                    é a constância da evolução."</i></p>
+            </section>
+
+            <section class="mensagemContato">
+                <h1 id="tituloContato">CONTACT</h1>
+
+                <form class="forumulario" action="https://api.staticforms.xyz/submit" method="post">
+
+                    <article class="parte1Formulario">
+                        <label>Name:</label>
+                        <input id="name" type="text" name="name" placeholder="Type your name" required>
+
+                        <label>E-mail:</label>
+                        <input id="email" type="email" name="email" placeholder="Type your e-mail"  required>
+                    </article>
+
+                    <article class="parte2Formulario">
+                        <label>Message:</label>
+                        <textarea id="message" name="message" cols="30" rows="4" placeholder="Type your message" required></textarea>
+
+                        <button id="botaoFormulario" type="submit"><i class="bi bi-send-fill">Send</i></button>
+
+                        <input type="hidden" name="accessKey" value="b63ee1e9-476d-4f82-a648-fdccad128dc5">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                    </article>
+                </form>
+            </section>
+
+            <section class="imagemCONTACTS">               
+                <section class="imagemCONTACTS1">
+                    <figure class="ladoalado">
+                        <img src="imagens/imagemEmailFooter.png" width="50" height="50" alt="Email">
+                        <figcaption class="contatoLegenda">rodriguesfsbernardo@gmail.com</figcaption>
+                    </figure>
+                    <figure class="ladoalado">
+                        <img src="imagens/imagemTelefoneFooter.png" width="50" height="50" alt="Telefone">
+                        <figcaption class="contatoLegenda">+55 (31) 98770-6385</figcaption>
+                    </figure>
+                </section>
+            </section>
+        </article>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>

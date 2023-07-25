@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Fira+Code&family=Inconsolata&family=Orbitron&family=Roboto+Mono:ital,wght@1,500&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Fira+Code&family=Inconsolata:wght@300;400&family=Orbitron&family=Roboto+Mono:ital,wght@1,500&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+    background: linear-gradient(to right, #000000f3, #01000ef1);
+  }
+
+/*Estilização de todo menu lateral*/
+article.menulateral {
+    height: 100%;
+    width: 290px;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 red;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 768px) {
+        width: 30px;
+        padding: 20px 0;
+        box-shadow: none;
+    }
+}
+
+/*Estilização botao da lista (3 barras)*/
+.botaoExpandir{
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: auto;
+    padding: 2%;
+}
+
+.classeDo1Botao {
+    padding-top: 7px;
+    padding-bottom: 8px;
+}
+
+.botaoExpandir > i {
+    color: gray;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+/*Estilização dos elementos da UL*/
+ul {
+    height: 100%;
+    list-style-type: none;
+    box-shadow: 3px 0 0 red;
+    position: fixed;
+    left: 0;
+
+    @media screen and (max-width: 768px) {
+        width: 30px;
+    }
+}
+
+ul li.itens {
+    transition: 1s;
+}
+
+ul li.itens :hover {
+    background-color: rgb(163, 161, 255);
+    margin-right: 6%;
+    border-radius: 3%;
+    transition: 0.5s;
+}
+
+ul li.itens a{
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 9px 4%;
+    display: flex;
+    margin-bottom: 13px;
+
+    align-items: center;
+}
+
+/*Estilizar nome dos ícones*/
+ul li.itens a .nomeItem {
+    margin-left: 30px;
+}
+
+ul li.itens a .icon > i{
+    font-size: 20px;
+}
+
+/*Estilização itens da lista para navegação*/
+.listaItens {
+    height: 100%;
+    width: 60px;
+    padding: 2px 0 40px 1%;
+    background-color: rgb(5, 0, 15);
+    overflow: hidden;
+    transition: .5s ease;
+    z-index: 10000;
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        padding: 2%;
+        transition: width 0.3s ease;
+        display: inline-block;
+        height: 7%;
+        font-size: small;
+
+        &.ativo {
+            height: 100%;
+            width: 50%;
+            transition: 0.5s;
+        }
+    }
+}
+
+ul:hover {
+    width: 250px;
+}
+
+.pagina1 {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.todaPagina {
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.imagensDaBarra {
+    padding: 0;
+    
+  width: 27px;
+  height: 27px;
+  
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+/*Título de bem vindo ao portifólio*/
+h1 {
+    color: white;
+    font-size: 75px;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 18vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 8vh;
+    line-height: 1.3;
+    
+
+    /* Ajustando título para dispositivos móveis */
+    @media screen and (max-width: 768px) {
+        font-size: 5vh;
+        margin-left: 10%; 
+        margin-top: 12vh; 
+        text-align: left;
+        line-height: 1.5;
+      }
+}
+
+
+
+/*Configuração do parágrafo incial*/
+p {
+    color: white;
+    font-size: x-large;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: auto;
+    font-family: Inconsolata;
+    line-height: 1.5;
+
+    /* Ajustando parágrafo para dispositivos móveis */
+    @media screen and (max-width: 768px) {
+        font-size: large;
+        margin-left: 10%; 
+        margin-right: 5%;
+        text-align: left;
+        line-height: 1.5;
+      }
+}
+
+/* Estilos para ocultar inicialmente os elementos */
+#tituloPrincipal,
+#paragrafoPrincipal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+/*Cores em azul do paragrafo inicial*/
+.verde {
+    color: rgb(46, 146, 0);
+}
+
+/*Cores em azul do paragrafo inicial*/
+.azul {
+    color: rgb(113, 113, 238);
+}
+
+/*Cores em vermelho do paragrafo inicial*/
+.vermelho {
+    color: red;
+}
+
+/*Cores em rosa do paragrafo inicial*/
+.rosa {
+    color: rgb(255, 123, 244);
+}
+
+
+/*NAO TENHO IDEIA - fiz isso antes n comentei e n sei oq era :/ */
+header p {
+    font-size: 10px;
+    padding-top: 40px;
+    margin-top: 10px;
+    align-items: right;
+  }
+
+/*Estilização da pagina toda de About me*/
+#ABOUTME {
+    padding-top: 13%;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos para ocultar inicialmente o texto */
+#ABOUTME {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+/*Estilização da pagina toda de skills*/
+  #SKILLS {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35vh;
+    padding-top: 6%;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
+    font-family: Inconsolata;
+
+    @media screen and (max-width: 768px) {
+        .skillsimg1,
+        .skillsimg2 {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* Mostra 3 imagens por fileira */
+          gap: 10px;
+          align-items: baseline;
+          font-size: small;
+        }
+        
+        .imagemSkills {
+            background-color: transparent;
+            width: 80%;
+            max-width: none;
+            object-fit: cover;
+        }
+    }
+  }
+
+/*Alinhar titulo SKILLS ao centro*/
+#SKILLS h1 {
+    margin-left: 45%;
+}
+
+/* Estilização apenas das imagens de skills*/
+.imagemSkills {
+    width: 10vw;
+    height: auto;
+    object-fit: cover; /* Para manter a proporção da imagem e garantir o mesmo tamanho */
+    margin: 10px;
+    margin-top: 3%;
+    border-radius: 4%;
+    background-color: rgba(189, 188, 255, 0.418);
+    padding: 11%;
+
+    
+}
+
+.imagemSkills:hover {
+    transform: scale(1.05) rotate(-0deg);
+    background-color: rgba(146, 146, 255, 0.418);
+}
+
+/* Estilização da primeira coluna imagens skills PC*/
+.skillsimg1 {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 3%;
+    align-items: flex-end;
+}
+
+/* Estilização da segunda coluna imagens skills PC*/
+.skillsimg2 {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 3%;
+    align-items: flex-end;
+    
+    
+}
+
+/*Alinhar titulo PROJECTS ao centro*/
+#PROJECTS h1 {
+    text-align: left;
+}
+
+#PROJECTS {
+    margin-top: 35vh;
+    padding-top: 13%;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
+    font-family: Inconsolata;
+}
+
+footer {
+    margin-top: 35vh;
+    font-family: Inconsolata;
+    background: linear-gradient(to top, #000000f3, #01000ef1);
+    padding-top: 1%;
+}
+
+
+  .frase {
+    font-size: medium;
+  }
+
+  .CONTACTS {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+  }
+
+  .imagemCONTACTS {
+    display: flex;
+  }
+
+  .ladoalado {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  }
+
+  .contatoLegenda {
+    padding-left: 9px;
+    padding-bottom: 15px; 
+    border-bottom: solid 1px white;
+  }
+
+/* Ajustes para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    footer {
+      margin-top: 20vh;
+      padding-top: 10px;
+    }
+    
+    .CONTACTS {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .frase {
+        text-align: center;
+    }
+
+    .imagemCONTACTS1 {
+        display: inline;
+    }
+
+    .contatoLegenda {
+        font-size: 12px;
+    }
+
+    .ladoalado img{
+        width: 8%;
+        height: 8%;
+    }
+
+    .contatoLegenda {
+        padding-left: 10px;
+        padding-bottom: 5px; 
+    }
+
+}
+
+
+
+#tituloContato {
+    font-size: medium;
+    font-family: Inconsolata;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    border-bottom: solid white 0.5px;
+    width: 15%;
+}
+
+.parte1Formulario label,
+.parte1Formulario input {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 70px;
+}
+
+.mensagemContato {
+    font-family: Inconsolata;
+    color: white;
+}
+
+.forumulario {
+    display: flex;
+}
+
+.parte2Formulario label,
+.parte2Formulario textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.forumulario input, textarea {
+    background-color: rgb(220, 218, 255);
+}
+
+#botaoFormulario {
+    background-color: rgb(220, 218, 255);
+    border-radius: 12%;
+}
+
+@media screen and (max-width: 768px) {
+    #tituloContato {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .parte1Formulario input {
+        margin-right: 0;
+    }
+
+    .forumulario {
+        flex-direction: column;
+        align-items: center;   
+        text-align: center;
+    }
+
+    .parte1Formulario label {
+        display: flex;
+    }
+
+    .parte2Formulario label {
+        margin-left: 10%;
+        display: flex;
+    }
+
+    .parte2Formulario textarea {
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
+
+  /* Aqui alterei o botão do js */
+  .botaoEnviado {
+    background-color: rgb(0, 255, 0);
+    border-radius: 12%;
+  }
