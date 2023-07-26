@@ -6,6 +6,8 @@ body {
     background: linear-gradient(to right, #000000f3, #01000ef1);
   }
 
+
+
 /*Estilização de todo menu lateral*/
 article.menulateral {
     height: 100%;
@@ -16,9 +18,9 @@ article.menulateral {
     top: 0;
     left: 0;
 
-    @media screen and (max-width: 768px) {
-        width: 30px;
-        padding: 20px 0;
+    @media screen and (max-width: 992px) {
+        width: 3.75vw;
+        padding: 2.5vh 0;
         box-shadow: none;
     }
 }
@@ -29,6 +31,7 @@ article.menulateral {
     padding-left: 10px;
     margin-bottom: auto;
     padding: 2%;
+
 }
 
 .classeDo1Botao {
@@ -42,6 +45,7 @@ article.menulateral {
     cursor: pointer;
 }
 
+
 /*Estilização dos elementos da UL*/
 ul {
     height: 100%;
@@ -50,13 +54,20 @@ ul {
     position: fixed;
     left: 0;
 
-    @media screen and (max-width: 768px) {
-        width: 30px;
+    @media screen and (max-width: 992px) {
+        width: 3.61vw;
     }
 }
 
 ul li.itens {
     transition: 1s;
+
+    @media screen and (max-width: 992px) {
+        width: 100vw;
+        height: 6vh;
+        padding: 2vh;
+    }
+
 }
 
 ul li.itens :hover {
@@ -64,7 +75,15 @@ ul li.itens :hover {
     margin-right: 6%;
     border-radius: 3%;
     transition: 0.5s;
+
+    @media screen and (max-width: 992px) {
+        width: 100vw;
+        height: 5vh;
+        padding: 2vh;
+    }
+
 }
+
 
 ul li.itens a{
     color: gray;
@@ -73,7 +92,6 @@ ul li.itens a{
     padding: 9px 4%;
     display: flex;
     margin-bottom: 13px;
-
     align-items: center;
 }
 
@@ -96,17 +114,18 @@ ul li.itens a .icon > i{
     transition: .5s ease;
     z-index: 10000;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
         width: 100vw;
-        padding: 2%;
+        padding: 2.85vh 0;
+        padding-left: 3.5vw;
         transition: width 0.3s ease;
         display: inline-block;
-        height: 7%;
-        font-size: small;
+        height: 7vh;
+        font-size: 3.36vw;
 
         &.ativo {
-            height: 100%;
-            width: 50%;
+            height: 100vh;
+            width: 52vw;
             transition: 0.5s;
         }
     }
@@ -139,6 +158,13 @@ ul:hover {
   padding-left: 0;
 }
 
+.titulosVerde {
+    
+    @media screen and (max-width: 992px) {
+        font-size: 8vw;
+    }
+}
+
 /*Título de bem vindo ao portifólio*/
 h1 {
     color: white;
@@ -147,15 +173,14 @@ h1 {
     margin-left: 25%;
     margin-top: 18vh;
     font-family: 'Lato', sans-serif;
-    font-size: 8vh;
     line-height: 1.3;
     
 
     /* Ajustando título para dispositivos móveis */
-    @media screen and (max-width: 768px) {
-        font-size: 5vh;
-        margin-left: 10%; 
-        margin-top: 12vh; 
+    @media screen and (max-width: 992px) {
+        font-size: 10vw;
+        margin-left: 12.74vw; 
+        margin-top: 14.42vh; 
         text-align: left;
         line-height: 1.5;
       }
@@ -174,10 +199,10 @@ p {
     line-height: 1.5;
 
     /* Ajustando parágrafo para dispositivos móveis */
-    @media screen and (max-width: 768px) {
-        font-size: large;
-        margin-left: 10%; 
-        margin-right: 5%;
+    @media screen and (max-width: 992px) {
+        font-size: 5.7vw;
+        margin-left: 12.74vw; 
+        margin-right: 4.81vw;
         text-align: left;
         line-height: 1.5;
       }
@@ -230,6 +255,17 @@ header p {
     flex-direction: column;
 }
 
+#ABOUTME p {
+
+    @media screen and (max-width: 992px) {
+        font-size: 5vw;
+        margin-left: 12.74vw; 
+        margin-right: 4.81vw;
+        text-align: left;
+        line-height: 1.5;
+      }
+}
+
 /* Estilos para ocultar inicialmente o texto */
 #ABOUTME {
     opacity: 0;
@@ -252,19 +288,19 @@ header p {
     line-height: 1.3;
     font-family: Inconsolata;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
         .skillsimg1,
         .skillsimg2 {
           display: grid;
           grid-template-columns: repeat(3, 1fr); /* Mostra 3 imagens por fileira */
-          gap: 10px;
+          gap: 1.2vw;
           align-items: baseline;
-          font-size: small;
+          font-size: 3vw;
         }
         
         .imagemSkills {
             background-color: transparent;
-            width: 80%;
+            width: 22vw;
             max-width: none;
             object-fit: cover;
         }
@@ -372,19 +408,29 @@ footer {
   }
 
 /* Ajustes para dispositivos móveis */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     footer {
-      margin-top: 20vh;
-      padding-top: 10px;
+      margin-top: 14.42vh;
+      padding-top: 1.2vh;
+    }
+
+    #tituloContato {
+        font-size: 10vw;
     }
     
     .CONTACTS {
-        display: inline-block;
+        display: inline;
         text-align: center;
     }
 
+    .forumulario {
+        flex-direction: row; /* Coloca os elementos lado a lado no modo mobile */
+        align-items: flex-start; /* Alinha os elementos ao topo */
+    }
+
     .frase {
-        text-align: center;
+        text-align: left;
+        margin-left: 5vw;
     }
 
     .imagemCONTACTS1 {
@@ -392,17 +438,17 @@ footer {
     }
 
     .contatoLegenda {
-        font-size: 12px;
+        font-size: 1.44vw;
     }
 
     .ladoalado img{
-        width: 8%;
-        height: 8%;
+        width: 3.61vw;
+        height: 3.61vw;
     }
 
     .contatoLegenda {
-        padding-left: 10px;
-        padding-bottom: 5px; 
+        padding-left: 1.2vw;
+        padding-bottom: 0.6vh; 
     }
 
 }
@@ -449,39 +495,64 @@ footer {
     border-radius: 12%;
 }
 
-@media screen and (max-width: 768px) {
-    #tituloContato {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
+@media screen and (max-width: 992px) {
+
+    .frase {
+        display: none;
     }
 
-    .parte1Formulario input {
-        margin-right: 0;
+    #tituloContato {
+        font-size: 3vw;
+        margin-left: 0;
+        width: 100vw;
+        text-align: center;
     }
 
     .forumulario {
+        justify-content: center;
+    }
+
+    .parte1Formulario, .parte2Formulario {
+        display: flex;
         flex-direction: column;
-        align-items: center;   
-        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .parte1Formulario label {
         display: flex;
+        margin-bottom: 0.5rem;
+        font-size: 2.3vw;
     }
 
     .parte2Formulario label {
-        margin-left: 10%;
+        margin-left: 0;
         display: flex;
+        margin-bottom: 0.5rem;
+        font-size: 2.3vw;
     }
 
     .parte2Formulario textarea {
-        align-items: center;
-        margin-bottom: 20px;
-        margin-left: 10%;
-        width: 80%;
+            width: 50vw;
+            max-width: 100%;
+            resize: vertical; /* Permite redimensionar verticalmente o textarea */
+        }
+
+    .imagemCONTACTS1 {
+        display: flex;
+        justify-content: center;
     }
-}
+
+    .imagemCONTACTS {
+        margin-top: 1vh;
+        justify-content: center;
+    }
+
+    #emaildofooter {
+        padding-right: 15vw;
+    }
+    }
+
 
 
   /* Aqui alterei o botão do js */
@@ -489,3 +560,4 @@ footer {
     background-color: rgb(0, 255, 0);
     border-radius: 12%;
   }
+
