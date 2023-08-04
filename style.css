@@ -17,13 +17,16 @@ article.menulateral {
     position: fixed;
     top: 0;
     left: 0;
+}
 
     @media screen and (max-width: 1300px) {
+        article.menulateral {
         width: 3.75vw;
         padding: 2.5vh 0;
         box-shadow: none;
+        }
     }
-}
+
 
 /*Estilização botao da lista (3 barras)*/
 .botaoExpandir{
@@ -53,36 +56,45 @@ ul {
     box-shadow: 3px 0 0 red;
     position: fixed;
     left: 0;
+}
 
     @media screen and (max-width: 1300px) {
-        width: 3.61vw;
+
+        ul{
+            width: 3.61vw;
+        }
     }
-}
+
 
 ul li.itens {
     transition: 1s;
-
-    @media screen and (max-width: 1300px) {
-        width: 100vw;
-        height: 6vh;
-        padding: 2vh;
-    }
-
 }
+    @media screen and (max-width: 1300px) {
+
+        ul li.itens {
+            width: 100vw;
+            height: 6vh;
+            padding: 2vh;
+    }
+}
+
 
 ul li.itens :hover {
     background-color: rgb(163, 161, 255);
     margin-right: 6%;
     border-radius: 3%;
     transition: 0.5s;
+}
 
     @media screen and (max-width: 1300px) {
-        width: 100vw;
-        height: 5vh;
-        padding: 2vh;
+
+        ul li.itens :hover {
+            width: 100vw;
+            height: 5vh;
+            padding: 2vh;
     }
 
-}
+    }
 
 
 ul li.itens a{
@@ -113,8 +125,10 @@ ul li.itens a .icon > i{
     overflow: hidden;
     transition: .5s ease;
     z-index: 10000;
-
+}
     @media screen and (max-width: 1300px) {
+
+        .listaItens {
         width: 100vw;
         padding: 2.85vh 0;
         padding-left: 3.5vw;
@@ -130,6 +144,7 @@ ul li.itens a .icon > i{
         }
     }
 }
+
 
 ul:hover {
     width: 250px;
@@ -158,10 +173,10 @@ ul:hover {
   padding-left: 0;
 }
 
-.titulosVerde {
-    
     @media screen and (max-width: 1300px) {
-        font-size: 8vw;
+
+        .titulosVerde {
+            font-size: 8vw;
     }
 }
 
@@ -174,10 +189,12 @@ h1 {
     margin-top: 18vh;
     font-family: 'Lato', sans-serif;
     line-height: 1.3;
-    
+}   
 
     /* Ajustando título para dispositivos móveis */
     @media screen and (max-width: 1300px) {
+
+        h1 {
         font-size: 10vw;
         margin-left: 12.74vw; 
         margin-top: 14.42vh; 
@@ -197,16 +214,18 @@ p {
     margin-top: auto;
     font-family: Inconsolata;
     line-height: 1.5;
-
+}
     /* Ajustando parágrafo para dispositivos móveis */
     @media screen and (max-width: 1300px) {
+        p {
         font-size: 5.7vw;
         margin-left: 12.74vw; 
         margin-right: 4.81vw;
         text-align: left;
         line-height: 1.5;
       }
-}
+    }
+
 
 /* Estilos para ocultar inicialmente os elementos */
 #tituloPrincipal,
@@ -255,14 +274,15 @@ header p {
     flex-direction: column;
 }
 
-#ABOUTME p {
 
     @media screen and (max-width: 1300px) {
-        font-size: 5vw;
-        margin-left: 12.74vw; 
-        margin-right: 4.81vw;
-        text-align: left;
-        line-height: 1.5;
+        
+        #ABOUTME p {
+            font-size: 5vw;
+            margin-left: 12.74vw; 
+            margin-right: 4.81vw;
+            text-align: left;
+            line-height: 1.5;
       }
 }
 
@@ -287,6 +307,7 @@ header p {
     font-family: 'Lato', sans-serif;
     line-height: 1.3;
     font-family: Inconsolata;
+
   }
 
     @media screen and (max-width: 1300px) {
@@ -306,6 +327,7 @@ header p {
             object-fit: cover;
         }
     }
+
 
 /*Alinhar titulo SKILLS ao centro*/
 #SKILLS h1 {
