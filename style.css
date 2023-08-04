@@ -20,6 +20,7 @@ article.menulateral {
 }
 
     @media screen and (max-width: 1300px) {
+
         article.menulateral {
         width: 3.75vw;
         padding: 2.5vh 0;
@@ -37,9 +38,23 @@ article.menulateral {
 
 }
 
+@media screen and (max-width: 1300){
+    .botaoExpandir {
+        padding-top: 0px;
+        padding: 0%;
+    }
+}
+
+
 .classeDo1Botao {
     padding-top: 7px;
     padding-bottom: 8px;
+}
+
+@media screen and (max-width: 1300){
+    .classeDo1Botao {
+        padding-top: 0;
+    }
 }
 
 .botaoExpandir > i {
@@ -73,7 +88,7 @@ ul li.itens {
 
         ul li.itens {
             width: 100vw;
-            height: 6vh;
+            height: 7vh;
             padding: 2vh;
     }
 }
@@ -130,11 +145,11 @@ ul li.itens a .icon > i{
 
         .listaItens {
         width: 100vw;
-        padding: 2.85vh 0;
-        padding-left: 3.5vw;
+        padding: 1.3vh 0;
+        padding-left: 6vw;
         transition: width 0.3s ease;
         display: inline-block;
-        height: 7vh;
+        height: 7.5vh;
         font-size: 3.36vw;
 
         &.ativo {
@@ -276,7 +291,7 @@ header p {
 
 
     @media screen and (max-width: 1300px) {
-        
+
         #ABOUTME p {
             font-size: 5vw;
             margin-left: 12.74vw; 
@@ -322,7 +337,7 @@ header p {
         
         .imagemSkills {
             background-color: transparent;
-            width: 22vw;
+            width: 10vw;
             max-width: none;
             object-fit: cover;
         }
@@ -332,6 +347,12 @@ header p {
 /*Alinhar titulo SKILLS ao centro*/
 #SKILLS h1 {
     margin-left: 45%;
+}
+
+@media screen and (max-width: 1300px) {
+    #SKILLS h1 {
+        text-align: left;
+    }
 }
 
 /* Estilização apenas das imagens de skills*/
@@ -345,8 +366,25 @@ header p {
     background-color: rgba(189, 188, 255, 0.418);
     padding: 11%;
 
-    
 }
+
+@media screen and (max-width: 1300px) {
+    .imagemSkills {
+        background-color: transparent;
+        width: 19vw;
+        display: table-column;
+        align-items: stretch;
+        
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .trescolunas {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 .imagemSkills:hover {
     transform: scale(1.05) rotate(-0deg);
@@ -547,6 +585,10 @@ footer {
         font-size: 2.3vw;
     }
 
+    .parte1Formulario input {
+        width: 35vw;
+    }
+
     .parte2Formulario label {
         margin-left: 0;
         display: flex;
@@ -555,7 +597,7 @@ footer {
     }
 
     .parte2Formulario textarea {
-            width: 50vw;
+            width: 38vw;
             max-width: 100%;
             resize: vertical; /* Permite redimensionar verticalmente o textarea */
         }
