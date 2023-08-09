@@ -372,16 +372,9 @@ header p {
     .imagemSkills {
         background-color: transparent;
         width: 19vw;
-        display: table-column;
+        display: block;
         align-items: stretch;
         
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .trescolunas {
-        display: flex;
-        flex-direction: column;
     }
 }
 
@@ -413,6 +406,22 @@ header p {
     align-items: flex-end;
     
     
+}
+
+
+
+/*Deus é mais*/
+@media (max-width: 768px) {
+    .skillsimg1, .skillsimg2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 11vw; /* Espaço entre as figuras */
+        align-items: flex-end;
+    }
+
+    figcaption {
+        text-align: center; 
+    }
 }
 
 /*Alinhar titulo PROJECTS ao centro*/
