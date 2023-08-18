@@ -290,6 +290,21 @@ header p {
     flex-direction: column;
 }
 
+.tituloCurriculo {
+    text-decoration: none;
+    color: lightgray;
+    display: inline-flex;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.exibircurriculo {
+    color: rgb(255, 85, 85);
+    border-radius: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
 
     @media screen and (max-width: 1300px) {
 
@@ -301,6 +316,7 @@ header p {
             line-height: 1.5;
       }
 }
+
 
 /* Estilos para ocultar inicialmente o texto */
 #ABOUTME {
@@ -427,8 +443,17 @@ header p {
 
 /*Alinhar titulo PROJECTS ao centro*/
 #PROJECTS h1 {
-    text-align: left;
+    margin-left: 45%;
+    margin-bottom: 4%;
 }
+
+@media screen and (max-width: 768px) {
+    #PROJECTS h1 {
+        margin-left: 38%;
+        
+    }
+}
+
 
 #PROJECTS {
     margin-top: 35vh;
@@ -441,6 +466,153 @@ header p {
     line-height: 1.3;
     font-family: Inconsolata;
 }
+
+.imgProjetos {
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    align-items: stretch;
+}
+
+
+#imgChatBot {
+    width: auto;
+    height: 270px;
+    background-color: rgba(37, 36, 61, 0.418);
+    margin: 10px;
+    margin-top: 3%;
+    margin-bottom: 0;
+    border-radius: 4%;
+    padding: 10px 4px 10px 4x;
+}
+
+#imgChatBot:hover {
+    background-color: rgba(99, 99, 163, 0.418);
+}
+
+#imgCalculadora {
+    width: auto;
+    height: 270px;
+    background-color: rgba(37, 36, 61, 0.418);
+    margin: 10px;
+    margin-top: 3%;
+    margin-bottom: 0;
+    border-radius: 4%;
+    padding: 12px 80px 12px 80px;
+    
+}
+
+#imgCalculadora:hover{
+    background-color: rgba(99, 99, 163, 0.418);
+}
+
+#imgFestaVip {
+    width: auto;
+    height: 270px;
+    background-color: rgba(37, 36, 61, 0.418);
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 3%;
+    border-radius: 4%;
+    padding: 12px 75px 12px 75px;
+}
+
+#imgFestaVip:hover{
+    background-color: rgba(99, 99, 163, 0.418);
+}
+
+.projeto1,
+.projeto2,
+.projeto3 {
+    border: solid rgba(99, 99, 163, 0.418) 0.001px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+.tituloProjeto {
+    padding-top: 20px;
+}
+
+.pProjetos {
+
+    font-size: 20px;
+    display: inline;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.linguagensUsadas {
+    height: 70px;
+    display: flex;
+    width: auto;
+    margin-top: 5%;
+    margin-left: 27%;
+
+}
+
+#linguagensUsadasC {
+    margin-left: 22%;
+}
+
+.botoesProjetos {
+    display: flex;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+    align-items: baseline;
+    justify-content: space-evenly;
+    width: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+}
+
+#botoesProjetoCalculadora {
+    margin-bottom: 6%;
+    margin-top: 11.8%;
+}
+
+#botoesProjetoChatBot {
+    margin-bottom: 6.3%;
+    margin-top: 15%;
+}
+
+@media screen and (max-width: 768px) {
+    .imgProjetos {
+        display: inline;
+        flex-direction: column;
+    }
+
+    #imgChatBot {
+        width: auto;
+        height: 31vh;
+        background-color: rgba(37, 36, 61, 0.418);
+        padding: 2%;
+
+    }
+
+    #imgCalculadora {
+        padding-left: 7.3vh;
+        padding-right: 7.3vh;
+        margin: 0;
+    }
+
+    #imgFestaVip {
+        padding-left: 6.7vh;
+        padding-right: 6.7vh;
+        margin: 0;
+    }
+
+    .tituloProjeto {
+        padding-top: 3vh;
+    }
+
+    .pProjetos {
+        font-size: 1.5vh;
+    }
+}
+
 
 footer {
     margin-top: 35vh;
